@@ -1,0 +1,37 @@
+.folderUpload_outer{position: relative;display: block;}
+.folderUpload_outer .folderUpload_fileHover{background-color: #595D6B;}
+.folderUpload_outer .folderUpload_loadingScreen{display: none;position: absolute;right: 0px;left: 0px;top: 0px;bottom: 0px;z-index: 999;}
+.folderUpload_outer .folderUpload_loadingScreen .folderUpload_loadingScreenBg{position: absolute;right: 0px;left: 0px;top: 0px;bottom: 0px;background-color: black;opacity: 0.5;}
+.folderUpload_outer .folderUpload_loadingScreen .folderUpload_loadingScreenText{position: absolute;right: 0px;left: 0px;color: white;font-size: 16px;text-align: center;top: calc(50% - 12px);}
+.folderUpload_outer .folderUpload_mainImage {position: relative;cursor: pointer;display: block;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_remove{position: absolute;right: 10px;top: 10px;z-index: 17;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_remove svg{cursor: pointer;font-size: 20px;color: #FF534F;z-index: 10;width: 20px;height: 20px;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_tumbnail input{padding: 5rem 2rem; width: 100%; height: 100%; border: none;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_tumbnail{display: none; width: 100%; height: 100%;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_tumbnail.active{display: block; z-index: 11; position: relative; background-color: #ffffff;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_tumbnail .folderUpload_img{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size: contain;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_fileName{display: none;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_fileName.active{display: block;z-index: 11;position: absolute;top: 50%;text-align: center;right: 10px;left: 10px;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_fileName .folderUpload_name{width: 100%;height: 100%;font-size: 13px;font-weight: bold;color: #575962;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_mainItem{cursor: pointer;width: 100%;height: 40vh;position: relative;border: 1px dotted black;display: block;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_mainItem:hover{background-color: #595D6B; transition: 0.3s;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_mainItem input{display: none;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_mainItem svg{cursor: pointer;font-size: 40px;position: absolute;left: calc(50% - 12px);top: calc(50% - 12px);color: #292b2c;width: 24px;height: 24px;}
+.folderUpload_outer .folderUpload_mainImage .folderUpload_mainItem:hover svg{color: #5bc0de; transition: 0.3s;}
+.folderUpload_outer .folderUpload_images{position: relative;}
+.folderUpload_outer .folderUpload_images ul{padding-left: 0px; display: flex; flex-wrap: wrap;}
+.folderUpload_outer .folderUpload_images ul li{list-style-type: none;flex: 0 0 calc(20% - 5px);width: 8vw;margin-right: 5px;position: relative;}
+.folderUpload_outer .folderUpload_images ul li:nth-child(5n+0){margin-right: 0px;flex: 0 0 calc(20%);}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_remove {position: relative;z-index: 17;position: absolute;right: 5px;top: 5px;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_remove svg{cursor: pointer;color: #FF534F;font-size: 20px;width: 15px;height: 15px;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item{margin-bottom: 0px;z-index: 1;cursor: pointer;border: 1px dotted black;position: relative;width: 100%;height: 10vh;display: block;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item .folderUpload_tumbnail{width: 100%;height: 100%;display: none;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item .folderUpload_tumbnail.active{display: block; z-index: 11; position: relative; background-color: #ffffff;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item .folderUpload_tumbnail .folderUpload_img{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size: contain;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item .folderUpload_fileName{display: none;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item .folderUpload_fileName.active{display: block;z-index: 11;position: absolute;top: 50%;text-align: center;right: 10px;left: 10px;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item .folderUpload_fileName .folderUpload_name{width: 100%;height: 100%;font-size: 8px;font-weight: bold;color: #575962;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item:hover svg{color: #5bc0de; transition: 0.3s; }
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item:hover{background-color: #595D6B; transition: 0.3s;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item svg{position: absolute;left: calc(50% - 8px);top: calc(50% - 8px);color: #292b2c;font-size: 30px;width: 16px;height: 16px;}
+.folderUpload_outer .folderUpload_images ul li .folderUpload_item input{display: none;}

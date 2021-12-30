@@ -1,0 +1,105 @@
+.dataTable_outer{display: block;padding: 5px 25px;font-size: 13px;font-family: inherit;}
+.dataTable_outer .dataTable_tableOuter .dataTable_noResulthOuter{border: none;}
+.dataTable_outer .dataTable_tableOuter .dataTable_noResulthOuter .dataTable_noResulthOuterIn{border-left: 1px solid #f1f1f1;border-right: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;border-spacing: 0px;}
+.dataTable_outer .dataTable_tableOuter .dataTable_noResulthOuter .dataTable_noResulthOuterIn .dataTable_noResulth{}
+.dataTable_outer .dataTable_tableOuter .dataTable_noResulthOuter .dataTable_noResulthOuterIn .dataTable_noResulth span{display: block;text-align: center;font-weight: 700;color: #323232;}
+.dataTable_outer .dataTable_tableOuter.autoTable .dataTable_noResulthOuter{display: block !important;}
+.dataTable_outer .dataTable_tableOuter.autoTable .dataTable_noResulthOuter .dataTable_noResulthOuterIn{display: block !important;width: calc(100% - 22px) !important;}
+.dataTable_outer .dataTable_tableOuter.autoTable .dataTable_noResulthOuter .dataTable_noResulthOuterIn .dataTable_noResulth{display: block;}
+.dataTable_outer .dataTable_tableOuter.autoTable .dataTable_noResulthOuter .dataTable_noResulthOuterIn .dataTable_noResulth span{display: block;text-align: center;font-weight: 700;color: #323232;}
+.dataTable_outer .sortTable.active{color: #424242 !important;background-color: white;border-radius: 5px;}
+.dataTable_outer .reverseSortTable.active{color: #424242 !important;background-color: white;border-radius: 5px;}
+.dataTable_outer .dataTable_opOuter{display: inline-block;padding: 20px 0px 0px 0px;width: 100%;}
+.dataTable_outer .dataTable_tableOuter{overflow:auto;overflow-x:auto;}
+.dataTable_outer .dataTable_outerFilterArea{display: flex;margin-bottom: 10px;flex-wrap: wrap;width: 100%;}
+
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter{display: block;margin-right: 10px;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter:hover .dataTable_dropdownMenuSelect{display:block;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter button{display: block;border: 1px solid #323232;background-color: #323232;color: white;padding: 5px 15px;font-weight: bold;cursor: pointer;border-radius: 5px;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter .dataTable_dropdownMenuSelect{display: none;position: absolute;background-color: white;width: 125px;border: 1px solid #323232;border-radius: 5px;z-index: 9;padding: 5px 0px;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter .dataTable_dropdownMenuSelect .dataTable_dropdownMenuItemSelect{display: block;padding: 5px 5px;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter .dataTable_dropdownMenuSelect .dataTable_dropdownMenuItemSelect .dataTable_dropdownMenuItemCheckboxOuterSelect{display: block;position: relative;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter .dataTable_dropdownMenuSelect .dataTable_dropdownMenuItemSelect .dataTable_dropdownMenuItemCheckboxOuterSelect input{margin: 0px;position: absolute;top: calc(50% - 6.6px);left: 6px;cursor: pointer;}
+.dataTable_outer .dataTable_outerFilterArea .dataTable_dropdownSelectOuter .dataTable_dropdownMenuSelect .dataTable_dropdownMenuItemSelect .dataTable_dropdownMenuItemCheckboxOuterSelect label{display: block;margin-left: 25px;font-size: 13px;font-weight: 600;cursor: pointer;}
+
+.dataTable_outer .dataTable_opOuter .dataTable_opSearch{display: flex;float: left;}
+.dataTable_outer .dataTable_opOuter .dataTable_opSearch .dataTable_formGroup{width: 100%; justify-content: flex-start; display: flex;}
+.dataTable_outer .dataTable_opOuter .dataTable_opSearch .dataTable_formGroup label{padding: 6px 0px;}
+.dataTable_outer .dataTable_opOuter .dataTable_opSearch .dataTable_formGroup input{border-radius: 5px;border:1px solid #ced4da;padding: 5px 10px;}
+.dataTable_outer .dataTable_opOuter .dataTable_opSearch .dataTable_formGroup input:focus-visible{outline: #323232 auto 1px;}
+.dataTable_outer .dataTable_opOuter .dataTable_opListCount{display: flex;float: right;}
+.dataTable_outer .dataTable_opOuter .dataTable_opListCount .dataTable_formGroup{width: 100%; justify-content: flex-end; display: flex;}
+.dataTable_outer .dataTable_opOuter .dataTable_opListCount .dataTable_formGroup label{padding: 6px 0px;color: #323232;}
+.dataTable_outer .dataTable_opOuter .dataTable_opListCount .dataTable_formGroup select{margin-left: 20px;border-radius: 5px;border:1px solid #ced4da;padding: 5px 10px;color: #323232;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter{float: right;margin-right: 25px;display: flex;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter svg{font-size: 15px;border: 1px solid #323232;border-radius: 5px;cursor: pointer;width: 21px;height: 21px;padding: 3px;margin: 0px;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter svg path{fill: #323232 !important;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter svg.active{background-color: #323232;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter svg.active path{fill: white !important;}
+
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown{position: relative;margin-left: 10px;display: block;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown:hover .dataTable_dropdownMenu{display:block;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown .dataTable_dropdownBtn{padding: 0px;border: none;font-size: 15px;border-radius: 0px;background-color: transparent !important;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown #dataTable_showedRowsOuterFilter{border: none;padding: 0px;width: 29px;height: 29px;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown .dataTable_dropdownMenu{display: none;position: absolute;top: 29px;left: 0px;background-color: white;border: 1px solid #7c7c7c;border-radius: 5px;padding: 5px 0px;z-index: 9;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown .dataTable_dropdownMenu .dataTable_dropdownMenuItem{display: block;width: 125px;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown .dataTable_dropdownMenu .dataTable_dropdownMenuItem .dataTable_dropdownMenuItemCheckboxOuter{display: flex;position: relative;padding: 5px 5px;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown .dataTable_dropdownMenu .dataTable_dropdownMenuItem .dataTable_dropdownMenuItemCheckboxOuter input{margin: 0px;position: absolute;top: calc(50% - 6.6px);left: 8px;}
+.dataTable_outer .dataTable_opOuter .dataTable_showRowFilter .dataTable_dropdown .dataTable_dropdownMenu .dataTable_dropdownMenuItem .dataTable_dropdownMenuItemCheckboxOuter label{display: block;margin-left: 20px;font-size: 13px;font-weight: 600;}
+
+.dataTable_outer .dataTable_tableOuter.autoTable table{display: inline-table;}
+.dataTable_outer .dataTable_tableOuter.autoTable table thead, .dataTable_tableOuter.autoTable table tbody {display: inline-table;width: 100%;border-spacing: 0px;}
+.dataTable_outer .dataTable_tableOuter.autoTable table tbody tr{display: flex;width: calc(100% - 2px);}
+.dataTable_outer .dataTable_tableOuter.autoTable table thead tr{display: flex;width: 100%;}
+.dataTable_outer .dataTable_tableOuter.autoTable table thead tr th{min-width: 230px;display: block;width: 100%;}
+.dataTable_outer .dataTable_tableOuter.autoTable table tbody tr td{min-width: 230px;width: 100%;display: block;font-family: inherit;font-size: 13px;}
+.dataTable_outer .dataTable_tableOuter.allSelectActive table thead tr th:first-child{width: 40px;min-width: 40px;border-left: 1px solid #f1f1f1;}
+.dataTable_outer .dataTable_tableOuter.allSelectActive table tbody tr td:first-child{width: 40px;min-width: 40px;}
+.dataTable_outer .dataTable_tableOuter.autoTable table tbody tr:last-child{}
+
+.dataTable_outer .dataTable_tableOuter table tbody tr .custom-checkbox{margin-right: 0px;line-height: 0;padding-left: 0px;display: block;width: 20px;}
+.dataTable_outer .dataTable_tableOuter table thead tr .custom-checkbox{margin-right: 0px;width: 20px;line-height: 0;padding-left: 0px;display: block;}
+.dataTable_outer .dataTable_tableOuter table{width: calc(100% - 2px);border-collapse: collapse;}
+.dataTable_outer .dataTable_tableOuter table tbody tr{border-left: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;border-right: 1px solid #f1f1f1;}
+.dataTable_outer .dataTable_tableOuter table tbody tr:hover{background-color: rgba(0,0,0,0.075);}
+.dataTable_outer .dataTable_tableOuter table thead tr th{padding: 10px 10px;border-top: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;border-right: 1px solid #f1f1f1;border-spacing: 0px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th:last-child{border-right: 1px solid #f1f1f1;}
+.dataTable_outer .dataTable_tableOuter table thead tr th:last-child{}
+.dataTable_outer .dataTable_tableOuter table tbody tr td{padding: 10px;border-right: 1px solid #f1f1f1;}
+.dataTable_outer .dataTable_tableOuter table tbody tr td:last-child{border: none;}
+.dataTable_outer .dataTable_tableOuter table tfoot tr td{padding: 10px;border-right: 1px solid #f1f1f1;border-left: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;font-weight:700;}
+.dataTable_outer .dataTable_tableOuter table tbody tr td .dataTable_specialOpArea{display: flex;}
+.dataTable_outer .dataTable_tableOuter table tbody tr td .dataTable_specialOpArea .dataTable_infoOpenModal{display: block;max-width: 40px;}
+.dataTable_outer .dataTable_tableOuter table tbody tr td .dataTable_specialOpArea .dataTable_infoOpenModal svg{display: block;max-width: 18px;height: 18px;margin-left: 10px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_rowTitle{text-align:left;color: #323232;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter{display: flex;position: relative;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowSearch input{border-radius: 5px;border:1px solid #ced4da;padding: 5px 10px;margin-top: 7px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowSearch input:focus-visible{outline: #323232 auto 1px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_filterBtn{margin-left: 10px; position: relative; top: 5px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_filterBtn i{font-size: 18px; cursor: pointer;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowfilterArea{display: none;position: absolute;right: 20px;left: 0px;top: 0px;background-color: #424242;border: 1px solid #424242;border-radius: 10px;-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);box-shadow: 4px 4px 2px 0px rgb(0 0 0 / 17%);}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowfilterArea.active{display:block;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowfilterArea ul{display: block;list-style: none;margin: 0px;padding: 10px 10px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowfilterArea ul li{display: block;width: 100%;margin-bottom: 5px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_rowfilterArea ul li:last-child{margin-bottom: 0px;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_sort, .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_desc{display: block;position: relative;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter span{display: block;width: calc(100% - 20px);color: white;}
+.dataTable_outer .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_sort i, .dataTable_tableOuter table thead tr th .dataTable_filterOuter .dataTable_desc i{font-size: 16px;cursor: pointer;color: #ffffff;position: absolute;right: 0px;top: 0px;padding: 3px;}
+.dataTable_outer .dataTable_paginationOuter .dataTable_pagination{display: flex;justify-content: center;margin: 10px;padding: 0px;}
+.dataTable_outer .dataTable_paginationOuter .dataTable_pagination li{display: flex;margin: 5px;width: 30px;height: 30px;}
+.dataTable_outer .dataTable_paginationOuter .dataTable_pagination li.active a{background-color: #177dff; color: #ffffff;}
+.dataTable_outer .dataTable_paginationOuter .dataTable_pagination li a{border-radius: 100%;border: 1px solid #ced4da;color: black;text-align: center;text-decoration: none;width: 100%;height: 100%;}
+.dataTable_outer .dataTable_paginationOuter .dataTable_pagination li a:hover{background-color: #177dff; transition: 0.3s; color: #ffffff;}
+.dataTable_outer .dataTable_paginationOuter .dataTable_pagination li a span{position: relative;display: block;width: 15px;height: 15px;left: calc(50% - 7.5px);top: calc(50% - 7.5px);line-height: 12px;margin: 0px;}
+
+.dataTable_modal{position: fixed;right: 0px;left: 0px;top: 0px;bottom: 0px;display: none;font-family: inherit;}
+.dataTable_modal .dataTable_modalBack{content:'';position: absolute;background-color: black;right: 0px;left: 0px;top: 0px;bottom: 0px;opacity: 0.3;}
+.dataTable_modal .dataTable_modalDialog{display: block;width: 550px;margin: 150px auto;position: relative;z-index: 9;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent{display: block;background-color: white;border-radius: 5px;padding: 15px 15px;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalHeader{display: block;position: relative;margin-bottom: 30px;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalHeader .dataTable_modalTitle{display: block;margin: 0px;font-size: 18px;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalHeader .dataTable_close{position: absolute;right: 0px;top: -3px;border: none;padding: 0px;font-size: 22px;cursor: pointer;background: none;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalBody{display: block;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalBody .dataTable_formGroup{display: block;margin-bottom: 20px;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalBody .dataTable_formGroup label{display: block;font-family: inherit;margin-bottom: 4px;font-size: 14px;}
+.dataTable_modal .dataTable_modalDialog .dataTable_modalContent .dataTable_modalBody .dataTable_formGroup .dataTable_formControl{display: block;width: 100%;background: #e8e8e8!important;border-color: #e8e8e8!important;opacity: .6!important;color: #495057;border: none;padding: 7px 7px;}

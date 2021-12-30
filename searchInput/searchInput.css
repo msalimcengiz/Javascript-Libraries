@@ -1,0 +1,32 @@
+.SearchSelect{display: block;width: 100%;position: relative;text-align: left;}
+.SearchSelect.NoIcons .SearchClearIcon{display: block !important;}
+.SearchSelect.NoIcons .SearchOuter:before{display: none !important;}
+.SearchSelect.NoIcons .SearchOuter.SearchOuterBefore:after{display: none !important;}
+.SearchSelect.NoIcons .SearchOuter input{padding: .375rem .75rem;}
+.SearchSelect .SearchOuter{margin-bottom: 0px;position:relative;cursor: pointer;}
+.SearchSelect .SearchOuter input{padding-left: 30px;cursor: text;}
+.SearchSelect .SearchOuter .SearchClearIcon{position: absolute;right: 30px;top: 0px;bottom: 0px;cursor: pointer;display: none;}
+.SearchSelect .SearchOuter .SearchClearIcon:hover i{background-color: #2f5275;color: white;}
+.SearchSelect .SearchOuter .SearchClearIcon i{position: absolute;top: calc(50% - 7.5px);border-radius: 100%;width: 17px;height: 17px;text-align: center;padding: 2.52px 0px;}
+.SearchSelect .SearchOuter:before{content: '\f002';position:absolute;top: calc(50% - 12px);left: 10px;color: #2f5275;z-index: 8;font-family: "Font Awesome 5 Pro";font-weight: 900;}
+.SearchSelect .SearchOuter.SearchOuterBefore:after{content: '\f0d7';position:absolute;top: calc(50% - 12px);right: 15px;color: #2f5275;z-index: 8;font-family: "Font Awesome 5 Pro";font-weight: 900;}
+.SearchSelect .SearchSuggestions{display: none;border: 1px solid #e8ebf3;background-color: white;overflow: hidden;height: 124px;position: absolute;z-index: 9;width: 100%;}
+.SearchSelect .SearchSuggestions .SearchSuggestionsResulth{left: 0px;opacity: 1;transition: none;display:none;height: 100%;overflow-y: auto;}
+.SearchSelect .SearchSuggestions .SearchInputDataBox{transition: all 0.3s ease;left: -100%;position: absolute;width: 100%;top: 0px;bottom: 0px;opacity: 0;overflow-y: auto;}
+.SearchSelect .SearchSuggestions ul{display: block;padding: 0px 0px;margin-bottom: 0px;}
+.SearchSelect .SearchSuggestions .SearchInputDataBox.ActiveList{left: 0px;opacity: 1;}
+.SearchSelect .SearchSuggestions ul li{display: block;}
+.SearchSelect .SearchSuggestions ul li.keySelectedIndex{background-color: #ececec;}
+.SearchSelect .SearchSuggestions ul li a{display: block;font-size: 12px;position: relative;padding: 5px 30px 5px 10px;}
+.SearchSelect .SearchSuggestions ul li:hover{background-color: #e8ebf3;}
+.SearchSelect .SearchSuggestions ul li a .cat_list_title{display: block;}
+.SearchSelect .SearchSuggestions ul li a .cat-list-back{display: block;}
+.SearchSelect .SearchSuggestions ul li a .cat-list-back i{margin-right: 5px;}
+.SearchSelect .SearchSuggestions ul li a .cat_list_arrow_icon{position: absolute;right: 10px;height: 12px;width: 8px;top: calc(50% - 6px);display: block;}
+.SearchSelect .SearchSuggestions ul li a .cat_list_arrow_icon i{position: absolute;top: 0px;left: 0px;}
+.SearchSelect .SearchSuggestions .NoResulth{display: block;font-size: 13px;margin-bottom: 10px;color: #3c5275;padding: 10px 15px;}
+.SearchSelect .SearchSuggestions .NoResulthAndAdd{display: block;padding: 10px 15px;}
+.SearchSelect .SearchSuggestions .NoResulthAndAdd .Title{display: block;font-size: 13px;margin-bottom: 10px;color: #3c5275;}
+.SearchSelect .SearchSuggestions .NoResulthAndAdd .VaryAddOuter{}
+.SearchSelect .SearchSuggestions .NoResulthAndAdd .VaryAddOuter input{}
+.SearchSelect .SearchSuggestions .NoResulthAndAdd .VaryAddOuter button{width: 100%;}

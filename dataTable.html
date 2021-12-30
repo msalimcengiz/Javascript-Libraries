@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="dataTable/dataTable.css">
+
+	<script type="text/javascript" src="jquery.3.2.1.min.js"></script>
+	<script type="text/javascript" src="dataTable/dataTable.js"></script>
+	<title>Datatable Example</title>
+</head>
+<body>
+<button type="button" onclick="addRow()">Yeni Ekle</button>
+<button type="button" onclick="updateAgeRow()">ID'si 5 Olan Yaş Sütununu 80 Olarak Güncelle</button>
+<button type="button" onclick="downloadExcel()">Excel İndir</button>
+<button type="button" onclick="changeAllData()">Tüm Verileri Değiştir</button>
+<button type="button" onclick="getDatas()">Verileri Konsola Yazdır</button>
+<button type="button" onclick="getSelectedDatas()">Seçilen Verileri Konsola Yazdır</button>
+
+<div id="dataTable"></div>
+
+<script type="text/javascript">
+	var myTable=$('#dataTable').dataTable({
+		data:[
+			{'ID':'1'  ,'NAME':'Ali'    ,'SURNAME':'Can'      ,'AGE':'16' ,'BIRTHDAY':'12/12/2021' ,'PHONE':'555 123 12 12' ,'EMAIL':'alican@hotmail.com'        ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'16','name':'16'}]}}},
+			{'ID':'2'  ,'NAME':'Veli'   ,'SURNAME':'Demir'    ,'AGE':'23' ,'BIRTHDAY':'10/08/2021' ,'PHONE':'555 232 23 54' ,'EMAIL':'velidemir@hotmail.com'     ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'23','name':'23'}]}}},
+			{'ID':'3'  ,'NAME':'Can'    ,'SURNAME':'Tatar'    ,'AGE':'42' ,'BIRTHDAY':'08/02/2021' ,'PHONE':'524 214 12 67' ,'EMAIL':'cantatar@hotmail.com'      ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'42','name':'42'}]}}},
+			{'ID':'4'  ,'NAME':'Ahmet'  ,'SURNAME':'Türkoğlu' ,'AGE':'12' ,'BIRTHDAY':'05/04/2021' ,'PHONE':'546 252 65 89' ,'EMAIL':'ahmetturkoglu@hotmail.com' ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'12','name':'12'}]}}},
+			{'ID':'5'  ,'NAME':'Salih'  ,'SURNAME':'Kanca'    ,'AGE':'14' ,'BIRTHDAY':'06/07/2021' ,'PHONE':'886 324 53 23' ,'EMAIL':'salihkanca@hotmail.com'    ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'14','name':'14'}]}}},
+			{'ID':'6'  ,'NAME':'Aslan'  ,'SURNAME':'Elibol'   ,'AGE':'17' ,'BIRTHDAY':'07/04/2021' ,'PHONE':'523 645 23 45' ,'EMAIL':'aslanelibol@hotmail.com'   ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'17','name':'17'}]}}},
+			{'ID':'7'  ,'NAME':'Bilgin' ,'SURNAME':'Cengiz'   ,'AGE':'13' ,'BIRTHDAY':'09/03/2021' ,'PHONE':'856 243 34 35' ,'EMAIL':'bilgincengiz@hotmail.com'  ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'13','name':'13'}]}}},
+			{'ID':'8'  ,'NAME':'Ömer'   ,'SURNAME':'Özdemir'  ,'AGE':'15' ,'BIRTHDAY':'15/09/2021' ,'PHONE':'125 637 34 75' ,'EMAIL':'omerozdemir@hotmail.com'   ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'15','name':'15'}]}}},
+			{'ID':'9'  ,'NAME':'Emre'   ,'SURNAME':'Maril'    ,'AGE':'24' ,'BIRTHDAY':'18/11/2021' ,'PHONE':'156 231 21 31' ,'EMAIL':'emremaril@hotmail.com'     ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'24','name':'24'}]}}},
+			{'ID':'10' ,'NAME':'Aykut'  ,'SURNAME':'Oflaz'    ,'AGE':'21' ,'BIRTHDAY':'27/01/2021' ,'PHONE':'884 315 31 78' ,'EMAIL':'aykutoflaz@hotmail.com'    ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'21','name':'21'}]}}},
+			{'ID':'11' ,'NAME':'Adem'   ,'SURNAME':'Tana'     ,'AGE':'26' ,'BIRTHDAY':'17/07/2021' ,'PHONE':'253 125 35 74' ,'EMAIL':'ademtana@hotmail.com'      ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'26','name':'26'}]}}},
+			{'ID':'12' ,'NAME':'Serdar' ,'SURNAME':'Bayrak'   ,'AGE':'11' ,'BIRTHDAY':'29/06/2021' ,'PHONE':'345 346 34 23' ,'EMAIL':'serdarbayrak@hotmail.com'  ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'2','name':'Erkek'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'11','name':'11'}]}}},
+			{'ID':'13' ,'NAME':'Gizem'  ,'SURNAME':'Arnavut'  ,'AGE':'50' ,'BIRTHDAY':'26/05/2021' ,'PHONE':'124 234 75 45' ,'EMAIL':'gizemarnavut@hotmail.com'  ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'50','name':'50'}]}}},
+			{'ID':'14' ,'NAME':'Bilge'  ,'SURNAME':'Ensar'    ,'AGE':'35' ,'BIRTHDAY':'23/08/2021' ,'PHONE':'238 548 23 23' ,'EMAIL':'bilgeensar@hotmail.com'    ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'35','name':'35'}]}}},
+			{'ID':'15' ,'NAME':'Aliya'  ,'SURNAME':'Altay'    ,'AGE':'34' ,'BIRTHDAY':'13/09/2021' ,'PHONE':'783 364 34 64' ,'EMAIL':'aliyaaltay@hotmail.com'    ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'34','name':'34'}]}}},
+			{'ID':'16' ,'NAME':'Pelin'  ,'SURNAME':'Dağlı'    ,'AGE':'27' ,'BIRTHDAY':'14/10/2021' ,'PHONE':'389 456 37 35' ,'EMAIL':'pelindagli@hotmail.com'    ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'27','name':'27'}]}}},
+			{'ID':'17' ,'NAME':'Ayşen'  ,'SURNAME':'Demirci'  ,'AGE':'29' ,'BIRTHDAY':'09/03/2021' ,'PHONE':'173 546 54 98' ,'EMAIL':'aysendemirci@hotmail.com'  ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'29','name':'29'}]}}},
+			{'ID':'18' ,'NAME':'Duygu'  ,'SURNAME':'Oluk'     ,'AGE':'13' ,'BIRTHDAY':'05/01/2021' ,'PHONE':'731 565 58 21' ,'EMAIL':'duyguoluk@hotmail.com'     ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'13','name':'13'}]}}},
+			{'ID':'19' ,'NAME':'Selen'  ,'SURNAME':'Kanlı'    ,'AGE':'15' ,'BIRTHDAY':'02/02/2021' ,'PHONE':'234 124 34 63' ,'EMAIL':'selenkanlı@hotmail.com'    ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'15','name':'15'}]}}},
+			{'ID':'20' ,'NAME':'Özge'   ,'SURNAME':'Yurt'     ,'AGE':'16' ,'BIRTHDAY':'14/11/2021' ,'PHONE':'467 214 84 45' ,'EMAIL':'ozgeyurt@hotmail.com'      ,'GENDER':{'1':{'id':'1','name':'Cinsiyet','values':[{'id':'3','name':'Kadın'}]}} ,'AGEFILTER':{'1':{'id':'1','name':'Yaş','values':[{'id':'16','name':'16'}]}}},
+		],
+		filterType:{
+			'BIRTHDAY':'date',
+		},
+		listCountOptions:[5,10,20],
+		customSearch:true,
+		colFilterBtn:true,
+		colFilterStatus:true,
+		opKeyName:'ID',
+		showInfoModal:true,
+		showInfoModalKeys:{
+			"ID":      {"title":'ID',           "type":'input'},
+			"NAME":    {"title":'İsim',         "type":'input'},
+			"SURNAME": {"title":'Soyisim',      "type":'input'},
+			"AGE":     {"title":'Yaş',          "type":'input'},
+			"PHONE":   {"title":'Telefon',      "type":'input'},
+			"EMAIL":   {"title":'E-Posta',      "type":'input'},
+			"BIRTHDAY":{"title":'Doğum Tarihi', "type":'input'},
+		},
+		keys:{
+			'ID':'ID',
+			'NAME':'İSİM',
+			'SURNAME':'SOYİSİM',
+			'AGE':'YAŞ',
+			'BIRTHDAY':'DOĞUM TARİHİ'
+		},
+		outerFilterType:{
+			'GENDER':{
+				'gender':{
+					'id':'1',
+					'title':'Cinsiyet',
+					'values':[
+						{'id':'3','name':'Kadın'},
+						{'id':'2','name':'Erkek'}
+					]
+				}
+			},
+			'AGEFILTER':{
+				'1':{
+					'id':'1',
+					'title':'Yaş',
+					'values':[
+						{'id':'16','name':'16'},
+						{'id':'23','name':'23'},
+						{'id':'42','name':'42'},
+						{'id':'12','name':'12'},
+						{'id':'14','name':'14'},
+						{'id':'17','name':'17'},
+						{'id':'13','name':'13'},
+						{'id':'15','name':'15'},
+						{'id':'24','name':'24'},
+						{'id':'21','name':'21'},
+						{'id':'26','name':'26'},
+						{'id':'11','name':'11'},
+						{'id':'50','name':'50'},
+						{'id':'35','name':'35'},
+						{'id':'34','name':'34'},
+						{'id':'27','name':'27'},
+						{'id':'29','name':'29'}
+					]
+				},
+			}
+		},
+		rowOperation:{
+			key:{
+				"{keyDataValue1}":'ID',
+				"{keyDataValue2}":'ID'
+			},
+			function:{
+				'{keyData1}':'editRow',
+				'{keyData2}':'deleteRow'
+			},
+			html:
+				'<button type="button" onclick="{keyData1}(\'{keyDataValue1}\')">Düzenle</button>'+
+				'<button type="button" onclick="{keyData2}(\'{keyDataValue2}\')">Sil</button>'
+		}
+	});
+
+	function changeAllData(){
+		let changeData=[
+			{'ID':'30'  ,'NAME':'Kelvin' ,'SURNAME':'Smith'  ,'AGE':'16' ,'BIRTHDAY':'' ,'PHONE':'' ,'EMAIL':'' },
+			{'ID':'31'  ,'NAME':'Alvin'  ,'SURNAME':'Jones'  ,'AGE':'23' ,'BIRTHDAY':'' ,'PHONE':'' ,'EMAIL':'' },
+			{'ID':'32'  ,'NAME':'Craig'  ,'SURNAME':'Murphy' ,'AGE':'42' ,'BIRTHDAY':'' ,'PHONE':'' ,'EMAIL':'' },
+			{'ID':'33'  ,'NAME':'Austin' ,'SURNAME':'Wilson' ,'AGE':'12' ,'BIRTHDAY':'' ,'PHONE':'' ,'EMAIL':'' },
+			{'ID':'34'  ,'NAME':'Abel'   ,'SURNAME':'Martin' ,'AGE':'14' ,'BIRTHDAY':'' ,'PHONE':'' ,'EMAIL':'' },
+		];
+		myTable.dataTable_setAllData(changeData);
+	}
+
+	function deleteRow(id){
+		myTable.dataTable_removeItem('ID',id);
+	}
+
+	function editRow(id){
+		myTable.dataTable_updateItem({
+			'ID':'1000',
+			'NAME':'Düzenlenen İsim',
+			'SURNAME':'Düzenlenen Soyisim',
+			'AGE':'25',
+			'PHONE':'666 666 66 66',
+			'EMAIL':'test@test.com'
+		},'ID',id);
+	}
+
+	function addRow(){
+		myTable.dataTable_addItem({
+			'ID':'1000',
+			'NAME':'Düzenlenen İsim',
+			'SURNAME':'Düzenlenen Soyisim',
+			'AGE':'25',
+			'PHONE':'666 666 66 66',
+			'EMAIL':'test@test.com'
+		});
+	}
+
+	function updateAgeRow(){
+		myTable.dataTable_updateItemCol('80','ID','5','AGE');
+	}
+
+	function downloadExcel(){
+		myTable.dataTable_writeDocument('xlsx','Kullanıcılar','dataTable/');
+	}
+
+	function getDatas(){
+		console.log(myTable.dataTable_getData());
+	}
+
+	function getSelectedDatas(){
+		console.log(myTable.dataTable_getSelected());
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="dateSelect/dateSelect.css">
+	<script type="text/javascript" src="jquery.3.2.1.min.js"></script>
+	<script type="text/javascript" src="dateSelect/dateSelect.js"></script>
+	<title>Date Select</title>
+</head>
+<body>
+	<div>
+		<button type="button" onclick="getDate()">Seçilen Tarihleri Konsola Yazdır</button>
+	</div>
+	<br>
+	<div>
+		<label>Tarih Seçimi</label>
+		<input type="text" id="dateInput">
+	</div>
+	<br>
+	<div>
+		<button type="button" onclick="getDateandHour()">Seçilen Tarihleri ve Saatleri Konsola Yazdır</button>
+	</div>
+	<br>
+	<div>
+		<label>Tarih ve Saat Seçin</label>
+		<input type="text" id="dateHourInput">
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var dateInput=$('#dateInput').dateSelect();
+	var dateHourInput=$('#dateHourInput').dateSelect({hour:true});
+
+	function getDate(){
+		console.log(dateInput.get());
+	}
+
+	function getDateandHour(){
+		console.log(dateHourInput.get());	
+	}
+</script>

@@ -1,0 +1,149 @@
+.dateSelect_outer{display: block;position: relative;max-width: 590px;}
+.dateSelect_outer .myElement{width: calc(100% - 40px);display: block;border-radius: 3px;border: solid 1px #262626;padding: 10px 20px;cursor: pointer;}
+.dateSelect_outer .myElementBlock{content: '';position: absolute;right: 0px;left: 0px;top: 0px;bottom: 0px;z-index: 9;cursor: pointer;max-width: 590px;}
+
+.dateSelect_outer .dateSelect_selectArea{display: none;position: absolute;background-color: white;top: 100%;left: 0px;width: 550px;z-index:999;-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);padding: 20px;border-radius: 5px;}
+.dateSelect_outer .dateSelect_selectArea.dateSelect_selectAreaActive{display: block;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea{display: block;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection{display: flex;width: 100%;flex: 0 0 100%;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate{display: block;position: relative;flex: 0 0 calc(50% - 55px);border-radius: 5px;border: 2px solid #c2c2c2;padding: 10px 20px;transition: all 0.3s ease;height: max-content;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate.dateSelect_selectDateActive{border: 2px solid #ff4b7e;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate.dateSelect_selectDateActive svg{color: #ff4b7e;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate:nth-child(1){margin-right: 10px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate:nth-child(2){margin-left: 10px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate .dateSelect_selectDateInfo{display: block;font-size: 12px;color: gray;font-weight: bold;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate .dateSelect_selectDateLabel{display: block;font-size: 15px;margin-top: 7px;color: #ff4f81;font-weight: bold;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate svg{position: absolute;right: 10px;top: calc(50% - 10px);font-size: 20px;width: 20px;height: 20px;fill: #c2c2c2;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour{display: block;position: relative;flex: 0 0 calc(25% - 60px);border-radius: 5px;border: 2px solid #c2c2c2;padding: 10px 30px 10px 20px;transition: all 0.3s ease;margin-right: 10px;height: max-content;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour:nth-child(3){margin-right: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectHourInfo{display: block;font-size: 12px;color: gray;font-weight: bold;}{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel{display: block;font-size: 15px;margin-top: 7px;color: #ff4f81;font-weight: bold;}{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel.dateSelect_selectHourLabelFirst{display: flex;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel.dateSelect_selectHourLabelFirst input{padding: 0px;border: none;border-bottom: 1px solid black;border-radius: 0px;margin: 0px 3px;text-align: center;height: 15px;color: #ff4b7e;font-weight: bold;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel.dateSelect_selectHourLabelFirst span{color: black;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel.dateSelect_selectHourLabelSecond{display: flex;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel.dateSelect_selectHourLabelSecond input{padding: 0px;border: none;border-bottom: 1px solid black;border-radius: 0px;margin: 0px 3px;text-align: center;height: 15px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectDateLabel.dateSelect_selectHourLabelSecond span{color: black;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour svg{position: absolute;right: 5px;top: calc(50% - 10px);font-size: 20px;width: 20px;height: 20px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour.dateSelect_selectDateActive{border: 2px solid #ff4b7e;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour.dateSelect_selectDateActive svg{color: #ff4b7e;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderAllArae{display: block;width: 100%;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderAllAraeHalf{display: inline-block;width: calc(50% - 10px);margin-right: 10px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae{display: block;margin-top: 20px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle{display: flex;position: relative;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle .dateSelect_selectCalenderTitleLeftBtn{position: absolute;left: 0px;cursor: pointer;width: 15px;height: 15px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle .dateSelect_selectCalenderTitleRightBtn{position: absolute;right: 0px;cursor: pointer;width: 15px;height: 15px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle .dateSelect_selectCalenderSubTitle{flex: 0 0 50%;text-align: center;font-weight: bold;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle .dateSelect_selectCalenderSubTitleFull{flex: 0 0 100%;text-align: center;font-weight: bold;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas{display: flex;width: 100%;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst{display: block;width: 50%;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstTitle{display: flex;width: 100%;border-bottom: none;margin-bottom: 10px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstTitle span{display: block;width: 100%;color: black;font-weight: bold;text-align: center;padding: 5px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstTitle span:nth-child(1){}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue{display: block;width: 100%;overflow: auto;max-height: 185px;margin: 0px;padding: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue{}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #ffffff;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue::-webkit-scrollbar{width: 5px;background-color: #f51959;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue::-webkit-scrollbar-thumb{background-color: #f51959;border: 2px solid #f51959;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li{display: flex;width: 100%;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li span{display: block;width: 100%;color: #b3b3b3;font-size: 14px;font-weight: bold;text-align: center;padding: 5px;border: 1px solid white;border-radius: 5px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li.dateSelect_selectHourAreaFirstValueHourActived{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li.dateSelect_selectHourAreaFirstValueHourActived span{background-color: #fdc8d7;border: 1px solid #fd6792;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li.dateSelect_selectHourAreaFirstValueHourActive{display: flex;width: 100%;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li.dateSelect_selectHourAreaFirstValueHourActive span{display: block;width: 100%;color: black;font-size: 14px;font-weight: bold;text-align: center;padding: 5px;border: 1px solid white;border-radius: 5px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li.dateSelect_selectHourAreaFirstValueHourActive:hover{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstValue li.dateSelect_selectHourAreaFirstValueHourActive:hover span{background-color: #fdc8d7;border: 1px solid #fd6792;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond{display: block;width: 50%;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondTitle{display: flex;width: 100%;border-bottom: none;margin-bottom: 10px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondTitle span{display: block;width: 100%;color: black;font-weight: bold;text-align: center;padding: 5px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondTitle span:nth-child(1){}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue{display: block;width: 100%;overflow: auto;max-height: 185px;margin: 0px;padding: 0px;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #ffffff;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue::-webkit-scrollbar{width: 5px;background-color: #f51959;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue::-webkit-scrollbar-thumb{background-color: #f51959;border: 2px solid #f51959;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li{display: flex;width: 100%;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li span{display: block;width: 100%;color: #b3b3b3;font-size: 14px;font-weight: bold;text-align: center;padding: 5px;border: 1px solid white;border-radius: 5px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li.dateSelect_selectHourAreaFirstValueHourActived{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li.dateSelect_selectHourAreaFirstValueHourActived span{background-color: #fdc8d7;border: 1px solid #fd6792;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li.dateSelect_selectHourAreaFirstValueHourActive{display: flex;width: 100%;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li.dateSelect_selectHourAreaFirstValueHourActive span{display: block;width: 100%;color: black;font-size: 14px;font-weight: bold;text-align: center;padding: 5px;border: 1px solid white;border-radius: 5px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li.dateSelect_selectHourAreaFirstValueHourActive:hover{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondValue li.dateSelect_selectHourAreaFirstValueHourActive:hover span{background-color: #fdc8d7;border: 1px solid #fd6792;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae{display: flex;width: 100%;margin-top: 20px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae{display: block;width: 100%;padding: 0px 15px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInTitleArae{display: flex;list-style: none;padding: 0px;margin: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInTitleArae li{display: block;width: 100%;text-align: center;font-size: 12px;color: #b3b3b3;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst{display: flex;flex-wrap: wrap;list-style: none;margin: 0px;padding: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li{flex: 0 0 13.42%;text-align: center;font-size: 12px;color: #b3b3b3;border: 1px solid white;padding: 7px 0px;border-radius: 5px;transition: all 0.1s ease;cursor: no-drop;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li.dateSelect_selectCalenderListInDaysAraeLight{color: black;font-weight: bold;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li.dateSelect_selectCalenderListInDaysAraeClosed{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li.dateSelect_selectCalenderListInDaysAraeLight:hover{background-color: #fdc8d7;border: 1px solid #fd6792;color: black;font-weight: bold;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li.dateSelect_selectCalenderListInDaysAraeBetweenActive{background-color: #ffdce6;border: 1px solid #ffdce6;color: black;font-weight: bold;border-radius: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li.dateSelect_selectCalenderListInDaysAraeLight.dateSelect_selectCalenderListInDaysAraeActive{background-color: #fdc8d7;border: 1px solid #fd6792;color: black;font-weight: bold;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond{display: flex;flex-wrap: wrap;list-style: none;padding: 0px;margin: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond li{flex: 0 0 13.47%;text-align: center;font-size: 12px;color: #b3b3b3;border: 1px solid white;padding: 7px 0px;border-radius: 5px;transition: all 0.1s ease;cursor: no-drop;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond li.dateSelect_selectCalenderListInDaysAraeLight{color: black;font-weight: bold;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond li.dateSelect_selectCalenderListInDaysAraeClosed{}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond li.dateSelect_selectCalenderListInDaysAraeLight:hover{background-color: #fdc8d7;border: 1px solid #fd6792;color: black;font-weight: bold;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond li.dateSelect_selectCalenderListInDaysAraeBetweenActive{background-color: #ffdce6;border: 1px solid #ffdce6;color: black;font-weight: bold;border-radius: 0px;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeSecond li.dateSelect_selectCalenderListInDaysAraeLight.dateSelect_selectCalenderListInDaysAraeActive{background-color: #fdc8d7;border: 1px solid #fd6792;color: black;font-weight: bold;}
+
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderBtnArae{display: block;margin-top: 15px;text-align: right;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderBtnArae .dateSelect_selectCalenderBtnClear{border: 1px solid #fd6792;font-size: 14px;color: white;font-weight: bold;padding: 5px 10px;border-radius: 5px;transition: all 0.3s ease;margin-right: 5px;background-color: #fd6792;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderBtnArae .dateSelect_selectCalenderBtnClear:hover{color: #f51959;background-color: white;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderBtnArae .dateSelect_selectCalenderBtnApprove{border: 1px solid #fd6792;font-size: 14px;color: white;font-weight: bold;padding: 5px 10px;border-radius: 5px;transition: all 0.3s ease;margin-right: 5px;background-color: #fd6792;cursor: pointer;}
+.dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderBtnArae .dateSelect_selectCalenderBtnApprove:hover{color: #f51959;background-color: white;}
+
+@media (min-width: 0px) and (max-width:576px){
+    .dateSelect_outer .dateSelect_selectArea{display: none;position: absolute;background-color: white;top: 100%;left: 0px;right: 0px;width: auto;z-index:999;-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.46);padding: 20px;border-radius: 5px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate{display: block;position: relative;flex: 0 0 100%;border-radius: 5px;border: 2px solid #c2c2c2;padding: 10px 20px;transition: all 0.3s ease;height: max-content;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection{display: flex;flex-wrap: wrap;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate:nth-child(1){margin-right: 0px;margin-bottom: 10px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectDate:nth-child(2){margin-left: 0px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle .dateSelect_selectCalenderSubTitle:nth-child(2){flex: 0 0 100%;text-align: center;font-weight: bold;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae .dateSelect_selectCalenderTitle .dateSelect_selectCalenderSubTitle:nth-child(3){display:none;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae:nth-child(2){display: none;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae{display: block;width: 100%;padding: 0px 5px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderArae{display: block;margin-top: 20px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae{display: flex;width: 100%;margin-top: 20px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderBtnArae .dateSelect_selectCalenderBtnApprove{margin-right: 0px;font-size: 14px;color: gray;font-weight: bold;padding: 5px 10px;border-radius: 5px;transition: all 0.3s ease;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderListArae .dateSelect_selectCalenderListInArae .dateSelect_selectCalenderListInDaysAraeFirst li.dateSelect_selectCalenderListInDaysAraeLight:hover{}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectCalenderAllAraeHalf{width: 100%;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour{flex: 0 0 calc(50% - 5px);padding: 10px 16px 10px 10px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour:nth-child(2){}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour:nth-child(3){margin-right: 0px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour .dateSelect_selectHourInfo{font-size: 12px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectDatesArea .dateSelect_selectDatesSelection .dateSelect_selectHour i{font-size: 16px;top: calc(50% - 8px);right: 5px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst .dateSelect_selectHourAreaFirstTitle{margin-bottom: 5px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond .dateSelect_selectHourAreaSecondTitle{margin-bottom: 5px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaFirst{margin-top: 10px;}
+    .dateSelect_outer .dateSelect_selectArea .dateSelect_selectHourAreas .dateSelect_selectHourAreaSecond{margin-top: 10px;}
+}
+
+@media (min-width: 577px) and (max-width:768px){
+
+}
+
+@media (min-width: 769px) and (max-width:992px){
+
+}
+
+@media (min-width: 993px) and (max-width:1200px){
+
+}
+
+@media (min-width: 1201px){
+
+}

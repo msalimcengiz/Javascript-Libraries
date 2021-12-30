@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="folderUpload/folderUpload.css">
+	<script type="text/javascript" src="jquery.3.2.1.min.js"></script>
+	<script type="text/javascript" src="folderUpload/folderUpload.js"></script>
+	<title>Folder Upload</title>
+</head>
+<body>
+	<button type="button" onclick="getImageData()">Görsel Verilerini Konsola Yaz</button>
+	<div id="imageArea" style="width:750px;"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var myImageArea=$('#imageArea').folderUpload({
+		elementCount:6,
+		mainImage:true,
+		fileTypes:['image/jpeg','image/png','image/jpg'],
+		inputFileType:['.jpg','.jpeg','.png']
+	});
+
+	function getImageData(){
+		console.log(myImageArea.getData());
+	}
+</script>

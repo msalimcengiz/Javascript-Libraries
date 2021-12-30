@@ -1,0 +1,11 @@
+.searchSelect_outer{display: block;width: 100%;position: relative;font-size: 14px;}
+.searchSelect_outer .searchSelect_searchArea{display: block;width: 100%;position: relative;}
+.searchSelect_outer .searchSelect_searchArea .searchSelect_searchItem{position: absolute;top: 0px;right: 0px;left: 0px;bottom: 0px;align-items: center;display: flex;padding: 5px 10px;}
+.searchSelect_outer .searchSelect_searchArea input{display: block;width: 100%;padding: 5px 10px;border-radius: 5px;border: 1px solid #8c8c8c;}
+.searchSelect_outer .searchSelect_searchArea .icon{position: absolute;right: 10px;top: calc(50% - 6px);width: 12px;height: 12px;display: block;cursor: pointer;}
+.searchSelect_outer .searchSelect_searchArea .icon svg{width: 100%;height: 100%;display: block;}
+.searchSelect_outer .searchSelect_selectArea{position: absolute;background-color: white;right: 0px;left: 0px;border: 1px solid #8c8c8c;border-radius: 5px;max-height: 225px;overflow: auto;z-index: 999;display: none;}
+.searchSelect_outer .searchSelect_selectArea.active{display:block;}
+.searchSelect_outer .searchSelect_selectArea ul{display: block;width: 100%;list-style: none;margin: 0px;padding: 0px;}
+.searchSelect_outer .searchSelect_selectArea ul li{display: block;width: 100%;padding: 5px 10px;border-bottom: 1px solid #8c8c8c;cursor: pointer;font-size: 16px;}
+.searchSelect_outer .searchSelect_selectArea ul li:hover{background-color: #e8e8e8;}
